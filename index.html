@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulus II : Perkalian Vektor</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                                            <!-- HERO!!! -->
+    <div class="hero">
+        <h1>PERKALIAN VECTOR</h1>
+        <p>Dan Contoh Pengaplikasiannya Dalam Game Development</p>
+    </div>
+                            <!-- MATERI PERKALIAN VECTOR KESELURUHAN  & KALKULATOR -->
+    <!-- PERKALIAN VECTOR -->
+    <h2>Perkalian Vector</h2>
+    <div class="materi">
+        <p>Perkalian vektor adalah operasi perkalian dengan dua operand (objek yang dikalikan) 
+            berupa vektor. Tetapi hasil operasi ini tidak selalu adalah vektor. 
+            Terdapat tiga macam perkalian vektor, yaitu produk skalar atau perkalian titik 
+            (dot product atau scalar product), perkalian silang (cross product)</p>
+        </div>
+
+    <!-- DOT PRODUCT -->
+    <h2>Dot Product</h2>
+    <div class="materi">
+        <p>Dot Product atau perkalian titik dan bisa disebut juga perkalian skalar adalah ukuran seberapa dekat dua vektor sejajar, berdasarkan arah yang ditunjuknya. Ukurannya adalah bilangan skalar (nilai tunggal) yang dapat digunakan untuk membandingkan dua vektor dan memahami dampak dari reposisi salah satu atau keduanya. Perkalian titik diperoleh dengan melakukan perhitungan matematis pada sifat-sifat vektor</p>
+        <p>Jika besar dua vektor dan sudut antara keduanya diketahui, maka mudah untuk menghitung perkalian titik. Perkalian titik direpresentasikan dengan menggunakan titik di antara dua referensi vektor, dalam hal ini a dan b , seperti yang ditunjukkan dalam rumus berikut:</p>
+        <p> a • b = ax * bx + ay * by</p>
+        <p>Persamaan lengkap untuk mencari perkalian titik sedikit lebih rumit. Caranya adalah dengan mengalikan besar vektor a dengan besar vektor b , lalu mengalikan hasilnya dengan kosinus (cos) sudut antar vektor, seperti yang ditunjukkan pada persamaan berikut:</p>
+        <p>a • b = |a| × |b| × cos(θ)</p>
+        <img src="" alt="dot-product">
+        <p></p>
+
+    </div>
+    <!-- KALKULATOR DOT PRODUCT -->
+    <div class="vector-container"> <!-- vector-container = kotak kontainer kalkulator  -->
+        <div class="vector-input dot"> <!-- dot product -->
+            <div class="u-vector dot"> <!-- Input untuk vector u  -->
+
+                <!-- abaikan math-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mover>
+                    <mi>u</mi>
+                    <mo>&rarr;</mo>
+                    </mover>
+                </math>
+                <!-- abaikan math-->
+
+                <input type="number" name="" id="" value="0">
+                <input type="number" name="" id="" value="0">
+                <input type="number" name="" id="" value="0">
+            </div>
+            <div class="v-vector dot"> <!-- Input untuk vector v  -->
+                
+                <!-- abaikan math -->
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mover>
+                    <mi>v</mi>
+                    <mo>&rarr;</mo>
+                    </mover>
+                </math>
+                <!-- abaikan math-->
+
+                <input type="number" name="" id="" value="0">
+                <input type="number" name="" id="" value="0">
+                <input type="number" name="" id="" value="0">
+            </div>
+            <button class="calc-btn dot">Calculate</button>
+            <div>
+                
+                <!-- abaikan math-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mover>
+                    <mi>u</mi>
+                    <mo>&rarr;</mo>
+                    </mover>
+                </math>
+                <span> * </span>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mover>
+                    <mi>v</mi>
+                    <mo>&rarr;</mo>
+                    </mover>
+                </math>
+                <!-- abaikan math-->
+                
+                <span class="result dot"> = </span>
+            </div>       
+        </div>
+    </div>
+
+    <!-- CROSS PRODUCT -->
+    <h2>Cross Product</h2>
+    <div class="materi">
+        <p>Hasil suatu perkalian silang dua buah vektor adalah juga sebuah vektor. Perkalian silang bersifat tidak komutatif.</p>
+        <p>Penentuan arah vektor pada perkalian silang dapat menggunakan kaidah tangan kanan yang melibatkan telapak tangan, empat jari, dan jempol/ibu jari. Di mana, telapak tangan menuju arah vektor pertama yang akan dikalikan dan empat jari menuju arah vektor kedua. Kemudian, arah vektor satuan hasil perkalian ditunjukkan oleh ibu jari.</p>
+        <p>Gambaran arah vektor a, vektor b, serta vektor yang tegak lurus dengan kedua vektor sesuai pada kondisi tiga vektor berikut</p>
+        <img src="" alt="left-hand-rule">
+    </div>
+    <!-- KALKULATOR DOT PRODUCT  -->
+    <div class="vector-container"> <!-- vector-container = kotak kontainer kalkulator  -->
+        <div class="vector-input cross">
+            <div class="u-vector cross">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mover>
+                    <mi>u</mi>
+                    <mo>&rarr;</mo>
+                    </mover>
+                </math>
+                <input type="number" name="" id="" value="0">
+                <input type="number" name="" id="" value="0">
+                <input type="number" name="" id="" value="0">
+            </div>
+            <div class="v-vector cross">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mover>
+                    <mi>v</mi>
+                    <mo>&rarr;</mo>
+                    </mover>
+                </math>
+                <input type="number" name="" id="" value="0">
+                <input type="number" name="" id="" value="0">
+                <input type="number" name="" id="" value="0">
+            </div>
+            <button class="calc-btn cross">Calculate</button>
+            <div>
+                <!-- abaikan math-->
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mover>
+                    <mi>u</mi>
+                    <mo>&rarr;</mo>
+                    </mover>
+                </math>
+                <span> x </span>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mover>
+                    <mi>v</mi>
+                    <mo>&rarr;</mo>
+                    </mover>
+                </math>
+                <!-- abaikan math-->
+                <span class="result cross"> = </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="game">
+        <iframe frameborder="0" src="https://itch.io/embed-upload/10369120?color=333333" allowfullscreen="" width="640" height="480"><a href="https://bad-nerd.itch.io/vectortest">Play VectorTest on itch.io</a></iframe>
+    </div>
+</body>
+</html>

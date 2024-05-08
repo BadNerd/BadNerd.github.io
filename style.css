@@ -1,0 +1,24 @@
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+.hero {
+    display: grid;
+    height: 400px;
+    background-color: aquamarine;
+}
+.hero > *{
+    justify-self: center;
+ 
+    
+}
+.hero > h1 {
+    margin: 0;
+    align-self: end;
+}
+.hero > p {
+    margin: 0;
+    align-self: start;
+}
