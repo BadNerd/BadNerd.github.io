@@ -8,11 +8,26 @@ let result_cross = document.querySelector(".result.cross");
 let u_vec_cross = document.querySelector(".u-vector.cross").children; //u vector for cross product
 let v_vec_cross = document.querySelector(".v-vector.cross").children; //v vector for cross product
 
+let calc_selc = document.querySelector(".calc-selc");
 
+calc_selc.addEventListener("input", () => {
+    if (calc_selc.value == "c"){
+        window.location.href = "#cross-product";
+    } 
+    if (calc_selc.value == "d"){
+        window.location.href = "#dot-product";
+    } 
+})
 
+calc_btn_dot.addEventListener("click", () => {
+    u_vec_dot[1].defaultValue = 0;
+    u_vec_dot[2].defaultValue = 0;
+    u_vec_dot[3].defaultValue = 0;
+    
+    v_vec_dot[1].defaultValue = 0;
+    v_vec_dot[2].defaultValue = 0;
+    v_vec_dot[3].defaultValue = 0;
 
-console.log(calc_btn_dot);
-calc_btn_dot.addEventListener("click", () => {;
     let u_x = u_vec_dot[1].value;
     let u_y = u_vec_dot[2].value;
     let u_z = u_vec_dot[3].value;
@@ -20,6 +35,7 @@ calc_btn_dot.addEventListener("click", () => {;
     let v_x = v_vec_dot[1].value;
     let v_y = v_vec_dot[2].value;
     let v_z = v_vec_dot[3].value;
+    
 
     let dot_result = (u_x * v_x) + (u_y * v_y) + (u_z * v_z)
 
@@ -28,7 +44,15 @@ calc_btn_dot.addEventListener("click", () => {;
 
 
 console.log(calc_btn_cross);
-calc_btn_cross.addEventListener("click", () => {;
+calc_btn_cross.addEventListener("click", () => {
+    u_vec_cross[1].defaultValue = 0;
+    u_vec_cross[2].defaultValue = 0;
+    u_vec_cross[3].defaultValue = 0;
+    
+    v_vec_cross[1].defaultValue = 0;
+    v_vec_cross[2].defaultValue = 0;
+    v_vec_cross[3].defaultValue = 0;
+    
     let u_x = u_vec_cross[1].value;
     let u_y = u_vec_cross[2].value;
     let u_z = u_vec_cross[3].value;
