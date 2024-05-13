@@ -8,6 +8,8 @@ let result_cross = document.querySelector(".result.cross");
 let u_vec_cross = document.querySelector(".u-vector.cross").children; //u vector for cross product
 let v_vec_cross = document.querySelector(".v-vector.cross").children; //v vector for cross product
 
+// let particles = document.querySelector("#")
+
 let calc_selc = document.querySelector(".calc-selc");
 
 calc_selc.addEventListener("input", () => {
@@ -69,3 +71,5 @@ calc_btn_cross.addEventListener("click", () => {
 
     result_cross.textContent = "= [" + x_result +", " + y_result + ", " + z_result +"]";
 })
+
+particlesJS.load('particle', 'particlesjs-config.json');
