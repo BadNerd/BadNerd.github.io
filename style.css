@@ -89,6 +89,8 @@ h3{
     padding: 24px 0;
     color: white;
     font-size: 24px;
+    border: 3px solid rgb(27, 27, 27);
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.534);
 }
 ::placeholder{
     color: rgb(255, 255, 255);
