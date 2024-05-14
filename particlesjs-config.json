@@ -4,7 +4,7 @@
       "value": 38,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 500
       }
     },
     "color": {
@@ -36,7 +36,7 @@
       }
     },
     "size": {
-      "value": 3,
+      "value": 4,
       "random": true,
       "anim": {
         "enable": true,
@@ -50,10 +50,10 @@
       "distance": 150,
       "color": "#ffffff",
       "opacity": 0.4,
-      "width": 2
+      "width": 3
     },
     "move": {
-      "enable": true,
+      "enable": false,
       "speed": 6,
       "direction": "bottom",
       "random": false,
