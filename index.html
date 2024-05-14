@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Kalkulus 2 : Perkalian Vector</title>
 </head>
 <body>
     <div class="navbar">
         <div class="brand">
-            <div class="firstname">ucup</div>
-            <div class="lastname">mulet</div>
+            <img src="" alt="logo">
         </div>
         <ul class="navigation">
             <li><a href="https://itch.io/embed-upload/10369120?color=333333" class="active">GAME</a></li>
@@ -26,7 +26,9 @@
     <div class="hero">
         <h1>VECTOR</h1>
         <h1>PERKALIAN VECTOR</h1>
-        <p>Disini kamu bakalan belajar materi tentang perkalian vektor, dan kamu bisa mencoba game menarik yang merupakan implementasi dari konsep perkalian vektor</p>
+        <p>Disini kamu bakalan belajar materi tentang perkalian vektor, 
+            dan kamu bisa mencoba game menarik yang merupakan implementasi dari konsep perkalian 
+            vektor</p>
         <a href="#content"><div class="start-btn">Ayo Mulai !</div></a>
     </div>
     <div class="title">
@@ -35,14 +37,14 @@
     </div>
     <div class="content" id="content" >
         <div id="particle"></div>
-        <div class="material" name="vector">
+        <div class="material" data-aos="fade-up" data-aos-easing="ease-in-sine" data-duration="2000" name="vector">
             <h2>APA ITU PERKALIAN VEKTOR ?</h2>
             <p>Perkalian vektor adalah operasi perkalian dengan dua operand (objek yang dikalikan) 
                 berupa vektor. Tetapi hasil operasi ini tidak selalu adalah vektor. 
                 Terdapat tiga macam perkalian vektor, yaitu produk skalar atau perkalian titik 
                 (dot product atau scalar product), perkalian silang (cross product)</p>
         </div>
-        <div class="material" name="dot-product">
+        <div class="material" data-aos="fade-up" data-aos-easing="ease-in-sine" data-duration="2000" name="dot-product">
             <h2>DOT PRODUCT</h2>
             <h3>Pengertian</h3>
             <p>Dot Product atau perkalian titik dan bisa disebut juga perkalian skalar adalah ukuran seberapa dekat dua vektor sejajar, berdasarkan arah yang ditunjuknya. Ukurannya adalah bilangan skalar (nilai tunggal) yang dapat digunakan untuk membandingkan dua vektor dan memahami dampak dari reposisi salah satu atau keduanya. Perkalian titik diperoleh dengan melakukan perhitungan matematis pada sifat-sifat vektor</p>
@@ -106,8 +108,10 @@
                     <span class="result dot"> = </span>
                 </div>
             </div>
+            <h3>Sifat - Sifat Dot Product</h3>
+            <img src="dot_product_2.png" alt="">
         </div>
-        <div class="material" name="cross-product">
+        <div class="material" data-aos="fade-up" data-aos-easing="ease-in-sine" data-duration="2000" name="cross-product">
             <h2>Cross Product</h2>
             <h3>Pengertian</h3>
             <p>Hasil suatu perkalian silang dua buah vektor adalah juga sebuah vektor. Perkalian silang bersifat tidak komutatif.</p>
@@ -184,5 +188,7 @@
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </body>
 </html>

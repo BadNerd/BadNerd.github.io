@@ -9,6 +9,8 @@ let u_vec_cross = document.querySelector(".u-vector.cross").children; //u vector
 let v_vec_cross = document.querySelector(".v-vector.cross").children; //v vector for cross product
 
 // let particles = document.querySelector("#")
+AOS.init();
+
 
 let calc_selc = document.querySelector(".calc-selc");
 
