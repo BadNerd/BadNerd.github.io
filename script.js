@@ -75,3 +75,5 @@ calc_btn_cross.addEventListener("click", () => {
 })
 
 particlesJS.load('particle', 'particlesjs-config.json');
+
+// ==========================================================================================
