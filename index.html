@@ -47,13 +47,14 @@
         <div class="material" data-aos="fade-up" data-aos-easing="ease-in-sine" data-duration="2000" name="dot-product">
             <h2>DOT PRODUCT</h2>
             <h3>Pengertian</h3>
-            <p>Dot Product atau perkalian titik dan bisa disebut juga perkalian skalar adalah ukuran seberapa dekat dua vektor sejajar, berdasarkan arah yang ditunjuknya. Ukurannya adalah bilangan skalar (nilai tunggal) yang dapat digunakan untuk membandingkan dua vektor dan memahami dampak dari reposisi salah satu atau keduanya. Perkalian titik diperoleh dengan melakukan perhitungan matematis pada sifat-sifat vektor</p>
+            <p>Dot Product atau perkalian titik dan bisa disebut juga perkalian skalar adalah ukuran seberapa dekat dua vektor sejajar, berdasarkan arah yang ditunjuknya.</p>
+            <p>Ukurannya adalah bilangan skalar (nilai tunggal) yang dapat digunakan untuk membandingkan dua vektor dan memahami dampak dari reposisi salah satu atau keduanya. Perkalian titik diperoleh dengan melakukan perhitungan matematis pada sifat-sifat vektor</p>
             <h3>Rumus Dot Product</h3>
             <p>Jika besar dua vektor dan sudut antara keduanya diketahui, maka mudah untuk menghitung perkalian titik. Perkalian titik direpresentasikan dengan menggunakan titik di antara dua referensi vektor, dalam hal ini a dan b , seperti yang ditunjukkan dalam rumus berikut:</p>
             <p> a • b = ax * bx + ay * by</p>
             <p>Persamaan lengkap untuk mencari perkalian titik sedikit lebih rumit. Caranya adalah dengan mengalikan besar vektor a dengan besar vektor b , lalu mengalikan hasilnya dengan kosinus (cos) sudut antar vektor, seperti yang ditunjukkan pada persamaan berikut:</p>
             <p>a • b = |a| × |b| × cos(θ)</p>
-            <img src="dot_product_1.png" alt="dot-product">
+            <img src="dot_product_1.png" alt="dot-product" class="special">
             <h3>Kalkulator Dot Product</h3>
             <div class="calculator" id="dot-product">
                 <div class="u-vector dot"> <!-- Input untuk vector u  -->
@@ -189,7 +190,9 @@
             <h1>Pengaplikasian Perkalian Vector Dalam Game</h1>
             <p>Salah satu penggunaan perkalian vector pada game yaitu adalah untuk mendeteksi apakah player pada game memasuki radius objek tertentu yang bisa mentrigger suatu event.  Caranya adalah pertama kita cari selisih antara vector koordinat objek dengan vector koordinat player (delta). Selanjutnya delta dari koordinat objek dengan player di kalikan dengan dirinya sendiri menggunakan dot product dan dicari akar kuadrat nya yang mana itu merupakan jarak player ke objek. Jika jarak player kurang dari radius maka event pada objek bisa kita trigger</p>
             <img src="game.jpeg" alt="">
-            <a href="" class="game-btn"> PLAY</a>
+            <div class="game-bar">
+                <a href="" class="game-btn"> <p>PLAY</p></a>
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>

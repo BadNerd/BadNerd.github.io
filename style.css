@@ -1,56 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Nunito:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Nunito:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
 body{
     margin: 0;
+    overflow-x:hidden;
 }
 * {
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
 }
 
-h1,h2,h3 {
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-}
-p {
-    font-size: 24px;
-    color: rgb(87, 87, 87);
-    font-weight: 400;
-}
-h1 {
-    font-size: 35.42px;
-}
-h2{
-    font-size: 33.19px;
-}
-h3{
-    font-size: 31.11px;
-}
 .hero {
     text-align: left;
-    padding: 128px 0;
+    padding: 100px 0;
     padding-left: 5%;
     height: 100vh;
+    width: 100vw;
     background-image: url("landing_page.png");
+    background-size: 120%;
+    background-repeat: no-repeat;
     box-sizing: border-box;
 }
 .hero > * {
     margin: 24px;
+    font-family: "Asap", sans-serif;
 }
 .hero > h1{
-    font-size: 48px;
-    color: rgb(110, 136, 250);
-    font-weight: 800;
+    font-size: 85px;
+    color: #a2acff;
+    font-weight: 800;    
 }
 .hero > h2 {
-    font-size: 28px;
-    color: rgb(138, 202, 202);
+    font-size: 54px;
+    color: #423dac;
 }
 .hero > p{
-    width: 35%;
-    font-size: 18px;
+    width: 37%;
+    font-size: 20px;
     line-height: 22pt;
-    color: rgb(97, 97, 97);
+    color: #6d6e71;
 }
 .hero > a{
     height: 64px;
@@ -73,17 +63,25 @@ h3{
 .title {
     text-align: center;
     height: auto;
-    /* background-image: url("Rumus.jpg"); */
+    background-image: url("Rumus.jpg");
     background-color: rgb(64, 101, 224);
-    padding: 16px 0;
+    padding: 24px 0;
     color: white;
     max-height: 394px;
     box-sizing: content-box;
+    width: 100vw;
     /* -webkit-text-stroke: 1px rgb(36, 36, 36); */
 }
+.title > h1{
+    font-size: 64;
+}
+.title > p{
+    font-size: 24;
+    font-weight: 400;
+}
 .title > * {
-    text-shadow: 0px 0px 4px black;
     color: white;
+    font-family: "Inter", sans-serif;
 }
 .content {
     background-color: rgba(50, 50, 173, 0);
@@ -92,23 +90,47 @@ h3{
     justify-items: center;
     padding-top: 32px;
     position: absolute;
+    width: 100vw;
 }
 .material {
-    width: 70%;
+    width: 70vw;
     margin: 16px;
     padding: 32px;
     border-radius: 25px;
-    box-shadow: 0 5px 2px 2px rgba(24, 24, 24, 0.623);
-    border: 2px solid rgb(32, 32, 32);
+    box-shadow: 0 5px 1px 2px rgba(24, 24, 24, 0.877);
+    border: 3px solid rgb(14, 14, 14);
     background-color: white;
+    display: grid;
+    height: auto;
+}
+.material > *{
+    font-family: 'Roboto', sans-serif;
+    color: #292929;
+}
+.material > h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+.material > h3{
+    font-size: 27px;
+    font-weight: 500;
+}
+.material > p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #404040;
 }
 .material > img {
     width: auto;
+    place-self: center;
+}
+img.special {
+    width:50vw;
 }
 .calculator {
     width: 100%;
     /* background-color: rgb(50, 50, 173); */
-    background-color : rgba(66,189,214,1);
+    background-color : rgba(20,2,111,1);
     display: grid;
     justify-content: center;
     border-radius: 24px;
@@ -127,6 +149,7 @@ h3{
     border-radius: 5px;
     border: 2px solid rgb(250, 250, 250);
     height: 40px;
+    width: 15vw;
     padding: 4px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0);
@@ -139,11 +162,12 @@ h3{
     border: 2px solid white;
     height: 40px;
     background-color: white;
-    color: rgba(66,189,214,1);
+    color:rgba(20,2,111,1);
     border-radius: 8px;
     font-size: 16px;
     font-weight: 700;
     margin: 8px 0;
+    
 }
 .calculator > button:hover{
     background-color: rgba(255, 255, 255, 0);
@@ -153,24 +177,44 @@ h3{
     width: 100%;
     border-radius: 15px;
 }
-.game-btn {
-    display: block;
-    width: 50%;
-    height: 50px;
-    margin-left: 25%;
-    background-color: rgb(66, 66, 66);
-    color: white;
-    border: 1px solid rgba(83, 83, 83, 0.473);
+.game-bar{
+    width: 100%;
+    height: 28vh;
+    background-image: url("Game\ bar.png");
+    background-repeat: no-repeat;
+    background-size: 110%;
     display: grid;
     place-content: center;
-    border-radius: 20px;
+    padding-top: 13%;
+    box-sizing: border-box;
+    perspective: 97px;
+    border-radius: 10px;
+    background-color: #6d6e71;
+}
+.game-btn {
+    display: block;
+    width: 10vw;
+    height: 45%;
+    background-color: #7300b3;
+    color: white;
+    border: 8px solid #b38cff;
+    display: grid;
+    place-content: center;
+    border-radius: 15px;
     text-decoration: none;
     font-size: 24px;
-    font-family: "Nunito", sans-serif;
-    box-shadow: 0px 4px 3px 1px rgba(70, 70, 70, 0.527);
+    box-shadow: 0px 5px 3px 1px rgba(31, 31, 31, 0.767);
+    transform: perspective(100px) rotateX(3deg);
+    text-align: center;
+}
+
+.game-btn > p {
+    font-size: 30px;
+    transform: perspective(100px) rotateX(3deg);
+    font-family: "Black Ops One", system-ui;
 }
 .game-btn:hover{
-    box-shadow: none;
+    box-shadow: 0px 2px 3px 1px rgba(31, 31, 31, 0.767);
 }
 /* ====================================== */
 .navbar {
@@ -182,7 +226,7 @@ h3{
     padding: 10px 0;
     width: 100%;
     height: 55px;
-    background-color: rgb(150, 171, 255);
+    background-color: rgb(5, 2, 112);;
     z-index: 2;
     /* box-shadow: 0 7px 15px 0 rgba(0, 0, 0) ; */
 }
@@ -215,7 +259,7 @@ h3{
 }
 
 .navigation > li > *:hover{
-    color: rgb(150, 171, 255);
+    color: rgb(2,0,50);;
     background-color: white;
     transform: all .3s ease-in-out
 }
@@ -231,9 +275,10 @@ h3{
 }
 /* ========================================= */
 #particle{
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    background : linear-gradient(180deg, rgba(144,142,181,1) 0%, rgba(66,189,214,1) 52%, rgba(144,142,181,1) 100%);
+    background: rgb(2,0,50);
+    background: linear-gradient(180deg, rgba(2,0,50,1) 0%, rgba(20,2,111,1) 52%, rgba(2,0,50,1) 100%);
     /* background-color: rgba(66,189,214,1); */
     background-size: cover;
     background-position: 50% 50%;
@@ -243,4 +288,57 @@ h3{
 }
 canvas {
     display: block;
+}
+body > img {
+    display: block;
+    translate: 0px 5500px;
+    width: 70%;
+}
+@media (max-width: 916px) {
+    .hero {
+        height: 70vh;
+        background-size: 100%;
+    }
+    .hero > h1 {
+        font-size: 32px;
+    }
+    .hero > h2 {
+        font-size: 24px;
+    }
+    .hero > p {
+        width: 30%;
+        font-size: 8px;
+        line-height: 16px;
+    }
+    .hero > *{
+        margin: 12px;
+    }
+    .hero > a {
+        width: 15%;
+        height: 15%;
+        font-size: 12px;
+    }
+    .material{
+        width: 60%;
+    }
+    .material > h2{
+        font-size: 32px;
+    }
+    .material > h3{
+        font-size: 24px;
+    }
+    .material > p {
+        font-size: 16px;
+    }
+    .game-bar {
+        height: 20vh;
+    }
+    .game-btn > p{
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px){
+    .hero {
+        height: 60vh;
+    }
 }
