@@ -164,3 +164,66 @@ color: #7425b4;
 .team-card2 .card2 .image2 img:hover {
     filter: grayscale(0%);
 }
+/* ====================================== */
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 0;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(140, 141, 235);
+    z-index: 3;
+    box-sizing: border-box;
+    /* box-shadow: 0 7px 15px 0 rgba(0, 0, 0) ; */
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+.brand > a > img {
+    box-shadow: none;
+    border: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navigation > li {
+    list-style: none;
+    padding: 15px;
+}
+
+.navigation > li > * {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation > li > *:hover{
+    color: rgb(2,0,50);;
+    background-color: white;
+    transform: all .3s ease-in-out
+}
+.active {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+.active :hover {
+    color: white;
+}
+/* ========================================= */
