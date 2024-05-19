@@ -1,0 +1,166 @@
+body {
+    background-image:linear-gradient(180deg, white, white, rgb(232, 186, 245))
+}
+.background .lets h1{
+position: absolute;
+font-size: 80px;
+width: 40vw;
+top: 120px;
+left: 130px;
+color: #7425b4;
+}
+.garis{
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    background-color: orangered;
+    margin-top: 250px;
+    margin-left: 130px;
+}
+.background .ayo p{
+    position: absolute;
+    width: 30vw;
+    top: 270px;
+    left: 130px;
+    font-size: 16px;
+}
+.our h1{
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #7425b4; 
+    margin-top: 50px;
+}
+.our p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: black;
+    margin-left: 350px;
+    margin-right: 250px;
+    width: 50vw;
+}
+.garis2{
+    width: 450px;
+    height: 4px;
+    margin-top: 20px;
+    margin-left: 470px;
+    background-color: #be87eb;
+}
+.kerkom img{
+    width: 700px;
+    right: 700px;
+    margin-top: 40px;
+    margin-left: 320px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.team-section{
+    width: 100%;
+}
+.team-section .container{
+    width: 80%;
+    margin: auto;
+}
+.team-section .container .row{
+    width: 80%;
+    margin: auto;
+}
+.team-section .container .row .tittle h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #7425b4;
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 20px;
+}
+.team-section .container .row .tittle p{
+    font-size: 16px;
+    font-family: 30px 0px;
+    color: black;
+    margin-left: 150px;
+    margin-right: 150px;
+    width: 42vw;
+    margin-top: 20px;
+    text-align: center;
+}
+.garis3{
+    width: 450px;
+    height: 4px;
+    margin-top: 20px;
+    margin-left: 220px;
+    background-color: #be87eb;
+}
+.team-section .container .team-card{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+    margin-left: 160px;
+}
+.team-section .container .team-card .card .image img{
+    height: 300px;
+    width: 200px;
+    
+}
+.team-section .container .team-card .card .content{
+    width: 100%;
+}
+.team-section .container .team-card .card .content h3{
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #7425b4;
+}
+.team-section .container .team-card .card .content p{
+    font-size: 15px;
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    color: black;
+}
+.team-section .container .team-card2{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+    margin-left: 160px;
+}
+.team-section .container .team-card2 .card2 .image2 img{
+    height: 300px;
+    width: 200px;
+}
+.team-section .container .team-card2 .card2 .content2{
+    width: 100%;
+}
+.team-section .container .team-card2 .card2 .content2 h3{
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #7425b4;
+    width: 20vw;
+}
+.team-section .container .team-card2 .card2 .content2 p{
+    font-size: 15px;
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    color: black;
+}
+.team-card .card .image img,
+.team-card2 .card2 .image2 img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.team-card .card .image img:hover,
+.team-card2 .card2 .image2 img:hover {
+    filter: grayscale(0%);
+}
