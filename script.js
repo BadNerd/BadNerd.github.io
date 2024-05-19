@@ -76,4 +76,10 @@ calc_btn_cross.addEventListener("click", () => {
 
 particlesJS.load('particle', 'particlesjs-config.json');
 
+
 // ==========================================================================================
+window.addEventListener('resize', function() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    console.log(`Width: ${width}, Height: ${height}`);
+});
